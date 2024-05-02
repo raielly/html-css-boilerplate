@@ -1,39 +1,38 @@
 @charset "utf-8";
 
 /*** Fonts Face CSS ***/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /**** CSS Variables ****/
 
 /** use variables in css property like, background-color: var(--primary-color); */
 :root {
-    /* --- color variables --- */
-    --primary-color: #f9f9f9;
-    --secondary-color: #fff;
-    --border-color: #e8dede;
-    --text-primary-color: #292323;
-    --text-secondary-color: #ccc;
-    --text-selection-color: #b3d4fc;
+  /* --- color variables --- */
+  --primary-color: #f9f9f9;
+  --secondary-color: #fff;
+  --border-color: #e8dede;
+  --text-primary-color: #292323;
+  --text-secondary-color: #ccc;
+  --text-selection-color: #b3d4fc;
 }
 
 /* -=- Common Element CSS Start -=- */
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::-moz-selection {
-    background: var(--text-selection-color);
-    text-shadow: none;
+  background: var(--text-selection-color);
+  text-shadow: none;
 }
 
 ::selection {
-    background: var(--text-selection-color);
-    text-shadow: none;
+  background: var(--text-selection-color);
+  text-shadow: none;
 }
 
 /* Prevent font size inflation */
@@ -45,33 +44,33 @@ html {
 
 html,
 body {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-    line-height: 20px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: var(--primary-color);
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-color);
 }
 
 img {
-    border: 0px !important;
-    outline: none;
-    width: 100%;
-    max-width: 100%;
-    display: block;
+  border: 0px !important;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 ul,
 ol {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    outline: none;
+  text-decoration: none;
+  outline: none;
 }
 
 /* A elements that don't have a class get default styles */
@@ -81,14 +80,22 @@ a:not([class]) {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -96,34 +103,34 @@ a:hover,
 a:focus,
 a:active,
 a:visited {
-    outline: none;
-    text-decoration: none;
+  outline: none;
+  text-decoration: none;
 }
 
 .btn:focus,
 .btn.focus,
 .form-control:hover,
 .form-control:focus,
-.form-control:focus:Active {
-    outline: none !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
+.form-control:focus:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
 }
 
 p {
-    margin: 0px;
-    font-size: 20px;
-    line-height: 32px;
-    color: var(--text-primary-color);
-    font-weight: normal;
+  margin: 0px;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--text-primary-color);
+  font-weight: normal;
 }
 
 hr {
-    margin: 1em 0;
-    padding: 0;
-    display: block;
-    border: 0;
-    border-top: 1px solid var(--border-color);
+  margin: 1em 0;
+  padding: 0;
+  display: block;
+  border: 0;
+  border-top: 1px solid var(--border-color);
 }
 
 audio,
@@ -132,39 +139,41 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 input::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--text-secondary-color);
-    opacity: 1;
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--text-secondary-color);
+  opacity: 1;
 }
 
 input:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: var(--text-secondary-color);
+  /* Internet Explorer 10-11 */
+  color: var(--text-secondary-color);
 }
 
 input::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: var(--text-secondary-color);
+  /* Microsoft Edge */
+  color: var(--text-secondary-color);
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
@@ -173,16 +182,16 @@ textarea:not([rows]) {
 }
 
 textarea::placeholder {
-    color: var(--text-secondary-color);
-    opacity: 1;
+  color: var(--text-secondary-color);
+  opacity: 1;
 }
 
 textarea:-ms-input-placeholder {
-    color: var(--text-secondary-color);
+  color: var(--text-secondary-color);
 }
 
 textarea::-ms-input-placeholder {
-    color: var(--text-secondary-color);
+  color: var(--text-secondary-color);
 }
 
 h1,
@@ -199,62 +208,65 @@ h6,
 .h6,
 p,
 a {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*** Heading CSS ***/
 h1,
-.h1 {}
+.h1 {
+}
 
 h2,
-.h2 {}
+.h2 {
+}
 
 h3,
-.h3 {}
+.h3 {
+}
 
 h4,
-.h4 {}
+.h4 {
+}
 
 h5,
-.h5 {}
+.h5 {
+}
 
 h6,
-.h6 {}
+.h6 {
+}
 
 /* Common Class CSS related to text alignment*/
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 /* -=- Header CSS -=- */
-header {}
+header {
+}
 
 /* -=- Footer CSS -=- */
-footer {}
+footer {
+}
 
 /* -=- Main Area CSS -=- */
-main {}
+main {
+}
 
 /* -=- Keyframe CSS -=- */
-
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
-@media (prefers-reduced-motion) {
-    
-}
 
 /****** Responsive CSS Start ******/
 
 @media only screen and (min-width: 1200px) {
-    /* Add style according to viewports size */
+  /* Add style according to viewports size */
 }
 
 /****** Responsive CSS End ******/
